@@ -1,1 +1,1 @@
-json.data(@comments) { |d| json.extract!(d, :text, :id, :user) }
+json.data(@comments) { |d| json.extract!(d, :text, :user) }
