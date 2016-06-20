@@ -1,0 +1,10 @@
+<% if false %>
+  <div class="contents row">
+    <% @tweets.each do |tweet| %>
+      <%= render partial: "tweet", locals: { tweet: tweet } %>
+    <% end %>
+    <%= paginate(@tweets) %>
+  </div>
+<% end -%>
+
+<%= react_component('TweetIndex', url: '/api/v1/tweets.json') %>
